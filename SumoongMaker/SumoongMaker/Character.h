@@ -11,8 +11,6 @@ class Character {
 private:
 	string name;
 	Stat stats;
-	int stress;
-	int money;
 
 public:
 	Character(string name);
@@ -20,4 +18,6 @@ public:
 	void showStats() const;
 	
 };
+
+
 

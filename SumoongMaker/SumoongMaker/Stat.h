@@ -40,12 +40,12 @@ public:
 	void setMoney(int m) { money = m; }
 
 	//스탯누적함수, 부분수정용
-	void addCharm(int val) { charm += val; }
-	void addIntelligence(int val) { intelligence += val; }
-	void addStrength(int val) { strength += val; }
-	void addArt(int val) { art += val; }
-	void addStress(int val) { stress += val; }
-	void addMoney(int val) { money += val; }
+	Stat& addCharm(int val) { charm += val; return *this; }
+	Stat& addIntelligence(int val) { intelligence += val; return *this; }
+	Stat& addStrength(int val) { strength += val; return *this; }
+	Stat& addArt(int val) { art += val; return *this; }
+	Stat& addStress(int val) { stress += val; return *this; }
+	Stat& addMoney(int val) { money += val; return *this; }
 
 	// 연산자 오버로딩, 전체스탯누적을 간단하게 함, 근데 필요없을수도? 일단 냅둠
 	Stat& operator+=(const Stat& other) {

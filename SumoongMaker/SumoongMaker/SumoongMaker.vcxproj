@@ -128,16 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Act.h" />
-    <ClInclude Include="ArtAct.h" />
+    <ClInclude Include="ActionFactory.h" />
     <ClInclude Include="Character.h" />
-    <ClInclude Include="CharmAct.h" />
-    <ClInclude Include="IntelligenceAct.h" />
     <ClInclude Include="Stat.h" />
-    <ClInclude Include="StrengthAct.h" />
-    <ClInclude Include="WorkAct.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RestAct.h" />
+    <ClCompile Include="ActionFactory.cpp" />
+    <ClCompile Include="Character.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
