@@ -1,4 +1,4 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS
 
 #include <iostream>
 #include <string>
@@ -227,9 +227,9 @@ int main() {
                 }
 
                 cout << "\n선택할 수 있는 행동들:\n";
-                cout << "1. 3티어 \n";
+                cout << "1. 1티어 \n";
                 cout << "2. 2티어\n";
-                cout << "3. 1티어\n";
+                cout << "3. 3티어\n";
 
                 int option;
                 cout << "\n행동 번호를 입력하세요: ";
