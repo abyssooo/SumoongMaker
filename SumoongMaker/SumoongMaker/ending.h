@@ -1,4 +1,4 @@
-#define ENDING_H
+#define Ending_h
 
 #include <string>
 #include "Stat.h"
