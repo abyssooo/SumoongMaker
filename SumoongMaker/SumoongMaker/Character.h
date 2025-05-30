@@ -16,7 +16,8 @@ public:
 	Character(string name);
 	void applyAct(const Act& act);
 	void showStats() const;
-	
+	Stat getStat() const { return stats; }
+
 };
 
 
