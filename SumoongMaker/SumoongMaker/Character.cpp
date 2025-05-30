@@ -5,15 +5,21 @@ Character::Character(string name) : name(name) {}
 
 void Character::applyAct(const Act& act) {
     stats += act.getStatEffect();
-    cout << act.getName() << " Çàµ¿À» ¼öÇàÇß½À´Ï´Ù." << endl;
+    cout << act.getName() << " í–‰ë™ì„ ìˆ˜í–‰í–ˆìŠµë‹ˆë‹¤." << endl;
 }
 
 void Character::showStats() const {
-    cout << "ÇöÀç ´É·ÂÄ¡:" << endl;
-    cout << "¸Å·Â: " << stats.getCharm() << endl;
-    cout << "Áö´É: " << stats.getIntelligence() << endl;
-    cout << "Ã¼·Â: " << stats.getStrength() << endl;
-    cout << "¿¹¼ú: " << stats.getArt() << endl;
-    cout << "½ºÆ®·¹½º: " << stats.getStress() << endl;
-    cout << "µ·: " << stats.getMoney() << endl;
+    cout << "\033[1;1H";
+    cout << "\033[2J";    
+
+    cout << "[í˜„ìž¬ ëŠ¥ë ¥ì¹˜]\n";
+    cout << "ë§¤ë ¥     : " << stats.getCharm() << "\n";
+    cout << "ì§€ëŠ¥     : " << stats.getIntelligence() << "\n";
+    cout << "ì²´ë ¥     : " << stats.getStrength() << "\n";
+    cout << "ì˜ˆìˆ      : " << stats.getArt() << "\n";
+    cout << "ìŠ¤íŠ¸ë ˆìŠ¤ : " << stats.getStress() << "\n";
+    cout << "ëˆ       : " << stats.getMoney() << "\n";
+    cout << "------------------------" << endl;
+}
+
 }
