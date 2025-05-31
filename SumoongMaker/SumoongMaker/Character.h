@@ -16,7 +16,7 @@ public:
 	Character(string name);
 	void applyAct(const Act& act);
 	void showStats() const;
-
+	void showStatsWithAsciiArt() const;
 };
 
 
