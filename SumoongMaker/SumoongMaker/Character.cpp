@@ -9,17 +9,11 @@ void Character::applyAct(const Act& act) {
 }
 
 void Character::showStats() const {
-    cout << "\033[1;1H";
-    cout << "\033[2J";    
-
-    cout << "[현재 능력치]\n";
-    cout << "매력     : " << stats.getCharm() << "\n";
-    cout << "지능     : " << stats.getIntelligence() << "\n";
-    cout << "체력     : " << stats.getStrength() << "\n";
-    cout << "예술     : " << stats.getArt() << "\n";
-    cout << "스트레스 : " << stats.getStress() << "\n";
-    cout << "돈       : " << stats.getMoney() << "\n";
-    cout << "------------------------" << endl;
-}
-
+    cout << "현재 능력치:" << endl;
+    cout << "매력: " << stats.getCharm() << endl;
+    cout << "지능: " << stats.getIntelligence() << endl;
+    cout << "체력: " << stats.getStrength() << endl;
+    cout << "예술: " << stats.getArt() << endl;
+    cout << "스트레스: " << stats.getStress() << endl;
+    cout << "돈: " << stats.getMoney() << endl;
 }
