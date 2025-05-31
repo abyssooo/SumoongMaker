@@ -75,7 +75,7 @@ int main() {
 
     // 스탯 출력
     cout << "\n현재 스탯:\n";
-    player.showStats();
+    player.showStatsWithAsciiArt();
 
     return 0;
 }
