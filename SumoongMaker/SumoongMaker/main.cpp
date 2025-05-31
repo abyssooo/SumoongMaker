@@ -2,80 +2,80 @@
 #include <memory>
 #include "Character.h"
 #include "ActionFactory.h"
+#include "Ending.h"
 
 using namespace std;
 
-int main() {
-    // Ä³¸¯ÅÍ »ý¼º
-    Character player("È«±æµ¿");
+ActCategory chooseCategory() {
+    cout << "\nì„ íƒí•  ìˆ˜ ìžˆëŠ” í–‰ë™ ì¹´í…Œê³ ë¦¬:\n";
+    cout << "1. ë§¤ë ¥ (Charm)\n";
+    cout << "2. ì§€ëŠ¥ (Intelligence)\n";
+    cout << "3. ì²´ë ¥ (Strength)\n";
+    cout << "4. ì˜ˆìˆ  (Art)\n";
+    cout << "5. íœ´ì‹ (Rest)\n";
+    cout << "6. ì•„ë¥´ë°”ì´íŠ¸ (Work)\n";
 
-    // °ÔÀÓ ½ÃÀÛ ¸Þ½ÃÁö
-    cout << "°ÔÀÓÀ» ½ÃÀÛÇÕ´Ï´Ù. "  << endl;
-
-    // Çàµ¿ Ä«Å×°í¸® Ãâ·Â
-    cout << "\n¼±ÅÃÇÒ ¼ö ÀÖ´Â Çàµ¿ Ä«Å×°í¸®:\n";
-    cout << "1. ¸Å·Â (Charm)\n";
-    cout << "2. Áö´É (Intelligence)\n";
-    cout << "3. Ã¼·Â (Strength)\n";
-    cout << "4. ¿¹¼ú (Art)\n";
-    cout << "5. ÈÞ½Ä (Rest)\n";
-    cout << "6. ¾Æ¸£¹ÙÀÌÆ® (Work)\n";
-
-    // Ä«Å×°í¸® ¼±ÅÃ
     int categoryInput;
-    cout << "\nÄ«Å×°í¸® ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ";
+    cout << "\nì¹´í…Œê³ ë¦¬ ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš”: ";
     cin >> categoryInput;
 
-    ActCategory category;
-
-    // Ä«Å×°í¸® ÀÔ·Â¿¡ ¸Â´Â ActCategory ¼³Á¤
     switch (categoryInput) {
-    case 1:
-        category = ActCategory::Charm;
-        break;
-    case 2:
-        category = ActCategory::Intelligence;
-        break;
-    case 3:
-        category = ActCategory::Strength;
-        break;
-    case 4:
-        category = ActCategory::Art;
-        break;
-    case 5:
-        category = ActCategory::Rest;
-        break;
-    case 6:
-        category = ActCategory::Work;
-        break;
+    case 1: return ActCategory::Charm;
+    case 2: return ActCategory::Intelligence;
+    case 3: return ActCategory::Strength;
+    case 4: return ActCategory::Art;
+    case 5: return ActCategory::Rest;
+    case 6: return ActCategory::Work;
     default:
-        cout << "Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù." << endl;
-        return 1;
+        cout << "ìž˜ëª»ëœ ìž…ë ¥ìž…ë‹ˆë‹¤. ê¸°ë³¸ê°’(íœ´ì‹)ìœ¼ë¡œ ì§„í–‰í•©ë‹ˆë‹¤.\n";
+        return ActCategory::Rest;
     }
+}
 
-    // ÇØ´ç Ä«Å×°í¸®ÀÇ Çàµ¿ Ãâ·Â
-    cout << "\n¼±ÅÃÇÒ ¼ö ÀÖ´Â Çàµ¿µé:\n";
-    cout << "1. Ã¹ ¹øÂ° Çàµ¿\n";
-    cout << "2. µÎ ¹øÂ° Çàµ¿\n";
-    cout << "3. ¼¼ ¹øÂ° Çàµ¿\n";
+int chooseAction() {
+    cout << "\nì„ íƒí•  ìˆ˜ ìžˆëŠ” í–‰ë™ë“¤:\n";
+    cout << "1. ì²« ë²ˆì§¸ í–‰ë™\n";
+    cout << "2. ë‘ ë²ˆì§¸ í–‰ë™\n";
+    cout << "3. ì„¸ ë²ˆì§¸ í–‰ë™\n";
 
-    // Çàµ¿ ¼±ÅÃ
     int option;
-    cout << "\nÇàµ¿ ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ";
+    cout << "\ní–‰ë™ ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš”: ";
     cin >> option;
 
-    // Çàµ¿ »ý¼º
-    unique_ptr<Act> act = ActionFactory::create(category, option);
+    if (option < 1 || option > 3) {
+        cout << "ìž˜ëª»ëœ ìž…ë ¥ìž…ë‹ˆë‹¤. ê¸°ë³¸ê°’(1)ìœ¼ë¡œ ì§„í–‰í•©ë‹ˆë‹¤.\n";
+        option = 1;
+    }
 
-    // ¼±ÅÃÇÑ Çàµ¿ Ãâ·Â
-    cout << "\n¼±ÅÃÇÑ Çàµ¿: " << act->getName() << endl;
+    return option;
+}
 
-    // Çàµ¿ Àû¿ë
-    player.applyAct(*act);
+int main() {
+    Character player("í™ê¸¸ë™");
+    cout << "ê²Œìž„ì„ ì‹œìž‘í•©ë‹ˆë‹¤." << endl;
 
-    // ½ºÅÈ Ãâ·Â
-    cout << "\nÇöÀç ½ºÅÈ:\n";
-    player.showStats();
+    for (int round = 1; round <= 12; ++round) {
+        cout << "\n===== " << round << "ë²ˆì§¸ í„´ ì‹œìž‘ =====\n";
+
+        for (int i = 0; i < 5; ++i) {
+            cout << "\n--- í–‰ë™ " << i + 1 << " ---\n";
+
+            ActCategory category = chooseCategory();
+            int option = chooseAction();
+
+            unique_ptr<Act> act = ActionFactory::create(category, option);
+            cout << "\nì„ íƒí•œ í–‰ë™: " << act->getName() << endl;
+            player.applyAct(*act);
+            cout << endl;
+        }
+
+        cout << "\n== " << round << "ë²ˆì§¸ í„´ ì¢…ë£Œ í›„ í˜„ìž¬ ìŠ¤íƒ¯ ==\n";
+        player.showStats();
+    }
+
+    // ì—”ë”© ì¶œë ¥
+    Ending ending(player.getStat());
+    cout << "\nê²Œìž„ ì¢…ë£Œ! ë‹¹ì‹ ì˜ ì—”ë”©ì€: " << ending.getEnding() << endl;
 
     return 0;
 }
