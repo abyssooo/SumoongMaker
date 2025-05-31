@@ -55,23 +55,23 @@ int main() {
     cout << "게임을 시작합니다." << endl;
 
     for (int round = 1; round <= 12; ++round) {
-        cout << "\n===== " << round << "번째 턴 시작 =====\n";
+    cout << "\n===== " << round << "번째 턴 시작 =====\n";
 
-        for (int i = 0; i < 5; ++i) {
-            cout << "\n--- 행동 " << i + 1 << " ---\n";
+    for (int i = 0; i < 5; ++i) {
+        player.showStats(); // 각 행동 전에 스탯 출력 (왼쪽 상단 고정)
+        cout << "\n--- 행동 " << i + 1 << " ---\n";
 
-            ActCategory category = chooseCategory();
-            int option = chooseAction();
+        ActCategory category = chooseCategory();
+        int option = chooseAction();
 
-            unique_ptr<Act> act = ActionFactory::create(category, option);
-            cout << "\n선택한 행동: " << act->getName() << endl;
-            player.applyAct(*act);
-            cout << endl;
-        }
-
-        cout << "\n== " << round << "번째 턴 종료 후 현재 스탯 ==\n";
-        player.showStats();
+        unique_ptr<Act> act = ActionFactory::create(category, option);
+        cout << "\n선택한 행동: " << act->getName() << endl;
+        player.applyAct(*act);
     }
+
+    cout << "\n== " << round << "번째 턴 종료 ==\n";
+}
+
 
     // 엔딩 출력
     Ending ending(player.getStat());
