@@ -21,3 +21,5 @@ void Character::showStats() const {
     cout << "돈       : " << stats.getMoney() << "\n";
     cout << "------------------------" << endl;
 }
+
+}
