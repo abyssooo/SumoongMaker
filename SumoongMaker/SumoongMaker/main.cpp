@@ -4,8 +4,17 @@
 #include "Character.h"
 #include "ActionFactory.h"
 #include "Ending.h"
+#include "MiniGame.h"
 
 using namespace std;
+
+class InstantAct : public Act {
+    string n; Stat eff;
+public:
+    InstantAct(string name, const Stat& s) : n(std::move(name)), eff(s) {}
+    string getName() const override { return n; }
+    Stat   getStatEffect() const override { return eff; }
+};
 
 int main() {
     char again;
@@ -14,10 +23,11 @@ int main() {
         cout << "게임을 시작합니다.\n";
 
         const int MAX_WEEKS = 12;
+        MiniGame mini;
 
         for ( int week = 1; week <= MAX_WEEKS; ++week ) {
-            cout << "\n==== " << week <<
-                "주차 ====\n";
+            cout << "\n==== " << week <<"주차 ====\n";
+            
 
             ActCategory category;
 
@@ -102,6 +112,14 @@ int main() {
 
             player.applyAct(*act);
             player.showStatsWithAsciiArt();
+
+            //3주차마다 미니게임 이벤트 발생
+            if ( week % 3 == 0 ) {
+                cout << "\n===== 미니게임 이벤트 발생! =====\n";
+                Stat reward = mini.run();
+                player.applyAct(InstantAct("미니게임", reward));
+                player.showStatsWithAsciiArt();
+            }
         }
 
         // 엔딩 출력

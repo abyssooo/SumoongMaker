@@ -7,6 +7,17 @@
       "RelativeMoniker": "D:0:0:{12D334DE-B4E5-4EBB-85B3-865F1DD1D8CB}|SumoongMaker\\SumoongMaker.vcxproj|solutionrelative:SumoongMaker\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{12D334DE-B4E5-4EBB-85B3-865F1DD1D8CB}|SumoongMaker\\SumoongMaker.vcxproj|C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\Minigame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{12D334DE-B4E5-4EBB-85B3-865F1DD1D8CB}|SumoongMaker\\SumoongMaker.vcxproj|solutionrelative:SumoongMaker\\Minigame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\soo\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\C\uD50C \uD300\uD50C9\\C\uD50C \uD300\uD50C9\\C\uD50C \uD300\uD50C9\\\uC18C\uC2A4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12D334DE-B4E5-4EBB-85B3-865F1DD1D8CB}|SumoongMaker\\SumoongMaker.vcxproj|C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\Minigame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{12D334DE-B4E5-4EBB-85B3-865F1DD1D8CB}|SumoongMaker\\SumoongMaker.vcxproj|solutionrelative:SumoongMaker\\Minigame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{12D334DE-B4E5-4EBB-85B3-865F1DD1D8CB}|SumoongMaker\\SumoongMaker.vcxproj|C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\ActionFactory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{12D334DE-B4E5-4EBB-85B3-865F1DD1D8CB}|SumoongMaker\\SumoongMaker.vcxproj|solutionrelative:SumoongMaker\\ActionFactory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -54,15 +65,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ActionFactory.cpp",
-              "DocumentMoniker": "C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\ActionFactory.cpp",
-              "RelativeDocumentMoniker": "SumoongMaker\\ActionFactory.cpp",
-              "ToolTip": "C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\ActionFactory.cpp",
-              "RelativeToolTip": "SumoongMaker\\ActionFactory.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAYwB0AAAA+AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "\uC18C\uC2A4.cpp",
+              "DocumentMoniker": "C:\\Users\\soo\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\C\uD50C \uD300\uD50C9\\C\uD50C \uD300\uD50C9\\C\uD50C \uD300\uD50C9\\\uC18C\uC2A4.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\C\uD50C \uD300\uD50C9\\C\uD50C \uD300\uD50C9\\C\uD50C \uD300\uD50C9\\\uC18C\uC2A4.cpp",
+              "ToolTip": "C:\\Users\\soo\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\C\uD50C \uD300\uD50C9\\C\uD50C \uD300\uD50C9\\C\uD50C \uD300\uD50C9\\\uC18C\uC2A4.cpp",
+              "RelativeToolTip": "..\\..\\..\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\C\uD50C \uD300\uD50C9\\C\uD50C \uD300\uD50C9\\C\uD50C \uD300\uD50C9\\\uC18C\uC2A4.cpp",
+              "ViewState": "AgIAAKoBAAAAAAAAAAAAAFkBAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-12T15:49:23.179Z",
+              "WhenOpened": "2025-06-01T23:20:06.004Z",
               "EditorCaption": ""
             },
             {
@@ -73,14 +84,52 @@
               "RelativeDocumentMoniker": "SumoongMaker\\main.cpp",
               "ToolTip": "C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\main.cpp",
               "RelativeToolTip": "SumoongMaker\\main.cpp",
-              "ViewState": "AgIAACIAAAAAAAAAAAAYwDIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-01T11:35:31.638Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "Minigame.cpp",
+              "DocumentMoniker": "C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\Minigame.cpp",
+              "RelativeDocumentMoniker": "SumoongMaker\\Minigame.cpp",
+              "ToolTip": "C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\Minigame.cpp",
+              "RelativeToolTip": "SumoongMaker\\Minigame.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-01T23:14:53.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Minigame.h",
+              "DocumentMoniker": "C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\Minigame.h",
+              "RelativeDocumentMoniker": "SumoongMaker\\Minigame.h",
+              "ToolTip": "C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\Minigame.h",
+              "RelativeToolTip": "SumoongMaker\\Minigame.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-01T23:13:23.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ActionFactory.cpp",
+              "DocumentMoniker": "C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\ActionFactory.cpp",
+              "RelativeDocumentMoniker": "SumoongMaker\\ActionFactory.cpp",
+              "ToolTip": "C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\ActionFactory.cpp",
+              "RelativeToolTip": "SumoongMaker\\ActionFactory.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwB0AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-12T15:49:23.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ending.h",
               "DocumentMoniker": "C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\ending.h",
               "RelativeDocumentMoniker": "SumoongMaker\\ending.h",
@@ -88,12 +137,11 @@
               "RelativeToolTip": "SumoongMaker\\ending.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-01T21:37:06.166Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T21:37:06.166Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "ending.cpp",
               "DocumentMoniker": "C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\ending.cpp",
               "RelativeDocumentMoniker": "SumoongMaker\\ending.cpp",
@@ -101,12 +149,11 @@
               "RelativeToolTip": "SumoongMaker\\ending.cpp",
               "ViewState": "AgIAAAkAAAAAAAAAAAAYwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-01T11:29:54.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T11:29:54.256Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Character.cpp",
               "DocumentMoniker": "C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\Character.cpp",
               "RelativeDocumentMoniker": "SumoongMaker\\Character.cpp",
@@ -114,12 +161,11 @@
               "RelativeToolTip": "SumoongMaker\\Character.cpp",
               "ViewState": "AgIAACMAAAAAAAAAAAAYwEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-12T16:26:56.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T16:26:56.369Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Act.h",
               "DocumentMoniker": "C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\Act.h",
               "RelativeDocumentMoniker": "SumoongMaker\\Act.h",
@@ -127,12 +173,11 @@
               "RelativeToolTip": "SumoongMaker\\Act.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-07T15:44:05.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T15:44:05.052Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ActionFactory.h",
               "DocumentMoniker": "C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\ActionFactory.h",
               "RelativeDocumentMoniker": "SumoongMaker\\ActionFactory.h",
@@ -140,12 +185,11 @@
               "RelativeToolTip": "SumoongMaker\\ActionFactory.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-12T16:08:36.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T16:08:36.489Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Character.h",
               "DocumentMoniker": "C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\Character.h",
               "RelativeDocumentMoniker": "SumoongMaker\\Character.h",
@@ -153,12 +197,11 @@
               "RelativeToolTip": "SumoongMaker\\Character.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-07T15:38:59.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T15:38:59.712Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Stat.h",
               "DocumentMoniker": "C:\\Users\\soo\\Desktop\\SumoongMaker\\SumoongMaker\\SumoongMaker\\Stat.h",
               "RelativeDocumentMoniker": "SumoongMaker\\Stat.h",
@@ -166,8 +209,7 @@
               "RelativeToolTip": "SumoongMaker\\Stat.h",
               "ViewState": "AgIAABYAAAAAAAAAAAAYwD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-07T15:41:59.444Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T15:41:59.444Z"
             }
           ]
         }
