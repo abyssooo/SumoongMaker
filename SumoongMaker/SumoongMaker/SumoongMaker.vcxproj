@@ -135,7 +135,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ActionFactory.cpp" />
-    <ClCompile Include="CharAct.cpp" />
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="ending.cpp" />
     <ClCompile Include="main.cpp" />

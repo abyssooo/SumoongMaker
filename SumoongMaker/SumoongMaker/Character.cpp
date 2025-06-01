@@ -9,6 +9,8 @@ Stat Character::getStat() const {
     return stats;
 }//초기화
 
+
+
 static const char* ascii_art[ ] = {
     "           ###     ##            ",
     "          ##  #   #  #           ",
@@ -30,7 +32,7 @@ static const char* ascii_art[ ] = {
 };
 
 
-Character::Character(string name) : name(name) {}
+Character::Character(string name) : name(name), stats(0, 0, 0, 0, 0, 10) {} // 시작 돈 10
 
 void Character::applyAct(const Act& act) {
     stats += act.getStatEffect();

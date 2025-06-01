@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include<iostream>
 #include <string>
@@ -16,13 +16,13 @@ private:
 	int money;
 
 public:
-	Stat() : charm(0), intelligence(0), strength(0), art(0), stress(0), money(0) {} // ±âº»°ª 0
-	// ´É·ÂÄ¡ ÃÊ±â°ª ÁöÁ¤, ¸Å°³º¯¼ö¸¦ ¹Ş´Â »ı¼ºÀÚ
+	Stat() : charm(0), intelligence(0), strength(0), art(0), stress(0), money(0) {} // ê¸°ë³¸ê°’ 0
+	// ëŠ¥ë ¥ì¹˜ ì´ˆê¸°ê°’ ì§€ì •, ë§¤ê°œë³€ìˆ˜ë¥¼ ë°›ëŠ” ìƒì„±ì
 	Stat(int c, int i, int s, int a, int st, int m)
 		: charm(c), intelligence(i), strength(s), art(a), stress(st), money(m) {
 	}
 
-	// getter, ÀĞ±â Àü¿ëÀÌ¶ó const
+	// getter, ì½ê¸° ì „ìš©ì´ë¼ const
 	int getCharm() const { return charm; }
 	int getIntelligence() const { return intelligence; }
 	int getStrength() const { return strength; }
@@ -39,7 +39,7 @@ public:
 	void setStress(int st) { stress = st; }
 	void setMoney(int m) { money = m; }
 
-	//½ºÅÈ´©ÀûÇÔ¼ö, ºÎºĞ¼öÁ¤¿ë
+	//ìŠ¤íƒ¯ëˆ„ì í•¨ìˆ˜, ë¶€ë¶„ìˆ˜ì •ìš©
 	Stat& addCharm(int val) { charm += val; return *this; }
 	Stat& addIntelligence(int val) { intelligence += val; return *this; }
 	Stat& addStrength(int val) { strength += val; return *this; }
@@ -47,7 +47,7 @@ public:
 	Stat& addStress(int val) { stress += val; return *this; }
 	Stat& addMoney(int val) { money += val; return *this; }
 
-	// ¿¬»êÀÚ ¿À¹ö·Îµù, ÀüÃ¼½ºÅÈ´©ÀûÀ» °£´ÜÇÏ°Ô ÇÔ, ±Ùµ¥ ÇÊ¿ä¾øÀ»¼öµµ? ÀÏ´Ü ³ÀµÒ
+	// ì—°ì‚°ì ì˜¤ë²„ë¡œë”©, ì „ì²´ìŠ¤íƒ¯ëˆ„ì ì„ ê°„ë‹¨í•˜ê²Œ í•¨,
 	Stat& operator+=(const Stat& other) {
 		charm += other.charm;
 		intelligence += other.intelligence;

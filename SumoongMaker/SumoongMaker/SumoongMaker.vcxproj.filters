@@ -41,9 +41,6 @@
     <ClCompile Include="Character.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="CharAct.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="ending.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>

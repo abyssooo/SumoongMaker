@@ -80,6 +80,7 @@ const map<pair<ActCategory, int>, ActionInfo> actionTable = {
 };
 
 
+
 unique_ptr<Act> ActionFactory::create(ActCategory category, int option) {
     auto it = actionTable.find({ category, option });
     if (it == actionTable.end()) {
