@@ -1,9 +1,13 @@
-#include "Character.h"
+﻿#include "Character.h"
 #include <iostream>
 #include <iomanip>
 #include <algorithm> // max
 
 using namespace std;
+
+Stat Character::getStat() const {
+    return stats;
+}//초기화
 
 static const char* ascii_art[] = {
     "        /\\   ♂ ♀   /\\        ",

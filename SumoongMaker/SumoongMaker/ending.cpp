@@ -1,4 +1,4 @@
-#include "Ending.h"
+﻿#include "Ending.h"
 #include <algorithm>
 
 using namespace std;

@@ -130,11 +130,14 @@
     <ClInclude Include="Act.h" />
     <ClInclude Include="ActionFactory.h" />
     <ClInclude Include="Character.h" />
+    <ClInclude Include="ending.h" />
     <ClInclude Include="Stat.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ActionFactory.cpp" />
+    <ClCompile Include="CharAct.cpp" />
     <ClCompile Include="Character.cpp" />
+    <ClCompile Include="ending.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

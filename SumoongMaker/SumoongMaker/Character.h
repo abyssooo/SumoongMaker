@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include<iostream>
 #include <string>
@@ -17,7 +17,10 @@ public:
 	void applyAct(const Act& act);
 	void showStats() const;
 	void showStatsWithAsciiArt() const;
+	Stat getStat() const; // 반복 추가
 };
+
+
 
 
 
