@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include "ActionFactory.h"
 #include "Act.h"
@@ -9,69 +9,73 @@
 #include <memory>
 #include <utility>
 
+#include <vector> 
+
 using namespace std;
 using ActionInfo = ActionFactory::ActionInfo;
 
 
+
+
 const map<pair<ActCategory, int>, ActionInfo> actionTable = {
-    // ¸Å·Â
-    {{ActCategory::Charm, 1}, {"¾Ä±â",         Stat().addCharm(1)
+    // ë§¤ë ¥
+    {{ActCategory::Charm, 1}, {"ì”»ê¸°",         Stat().addCharm(1)
                                               .addStress(1)
                                               .addMoney(-1)}},
-    {{ActCategory::Charm, 2}, {"¹Ì¿ë½Ç °¡±â",  Stat().addCharm(2)
+    {{ActCategory::Charm, 2}, {"ë¯¸ìš©ì‹¤ ê°€ê¸°",  Stat().addCharm(2)
                                               .addStress(2)
                                               .addMoney(-2)}},
-    {{ActCategory::Charm, 3}, {"ÇÇºÎ°ú °¡±â",  Stat().addCharm(3)
+    {{ActCategory::Charm, 3}, {"í”¼ë¶€ê³¼ ê°€ê¸°",  Stat().addCharm(3)
                                               .addStress(3)
                                               .addMoney(-3)}},
 
-    // Áö´É
-    {{ActCategory::Intelligence, 1}, {"°øºÎÇÏ±â",   Stat().addIntelligence(1)
+    // ì§€ëŠ¥
+    {{ActCategory::Intelligence, 1}, {"ê³µë¶€í•˜ê¸°",   Stat().addIntelligence(1)
                                                           .addStress(1)
                                                           .addMoney(-1)}},
-    {{ActCategory::Intelligence, 2}, {"ÇĞ¿ø °¡±â",   Stat().addIntelligence(2)
+    {{ActCategory::Intelligence, 2}, {"í•™ì› ê°€ê¸°",   Stat().addIntelligence(2)
                                                            .addStress(2)
                                                            .addMoney(-2)}},
-    {{ActCategory::Intelligence, 3}, {"°ú¿Ü ¹Ş±â",   Stat().addIntelligence(3)
+    {{ActCategory::Intelligence, 3}, {"ê³¼ì™¸ ë°›ê¸°",   Stat().addIntelligence(3)
                                                            .addStress(3)
                                                            .addMoney(-3)}},
 
-    // Ã¼·Â
-    {{ActCategory::Strength, 1}, {"»ó¸í´ë ¾ğ´ö ¿À¸£±â", Stat().addStrength(1)
+    // ì²´ë ¥
+    {{ActCategory::Strength, 1}, {"ìƒëª…ëŒ€ ì–¸ë• ì˜¤ë¥´ê¸°", Stat().addStrength(1)
                                                               .addStress(1)
                                                               .addMoney(-1)}},
-    {{ActCategory::Strength, 2}, {"Çï½ºÀå °¡±â",      Stat().addStrength(2)
+    {{ActCategory::Strength, 2}, {"í—¬ìŠ¤ì¥ ê°€ê¸°",      Stat().addStrength(2)
                                                             .addStress(2)
                                                             .addMoney(-2)}},
-    {{ActCategory::Strength, 3}, {"PT ¹Ş±â",        Stat().addStrength(3)
+    {{ActCategory::Strength, 3}, {"PT ë°›ê¸°",        Stat().addStrength(3)
                                                           .addStress(3)
                                                           .addMoney(-3)}},
 
-    // ¿¹¼ú
-    {{ActCategory::Art, 1}, {"Á¾ÀÌÁ¢±â",      Stat().addArt(1)
+    // ì˜ˆìˆ 
+    {{ActCategory::Art, 1}, {"ì¢…ì´ì ‘ê¸°",      Stat().addArt(1)
                                                     .addStress(1)
                                                     .addMoney(-1)}},
-    {{ActCategory::Art, 2}, {"Àü½ÃÈ¸ º¸·¯°¡±â", Stat().addArt(2)
+    {{ActCategory::Art, 2}, {"ì „ì‹œíšŒ ë³´ëŸ¬ê°€ê¸°", Stat().addArt(2)
                                                       .addStress(2)
                                                       .addMoney(-2)}},
-    {{ActCategory::Art, 3}, {"±×¸² ±×¸®±â",    Stat().addArt(3)
+    {{ActCategory::Art, 3}, {"ê·¸ë¦¼ ê·¸ë¦¬ê¸°",    Stat().addArt(3)
                                                      .addStress(3)
                                                      .addMoney(-3)}},
 
-    // ÈŞ½Ä
-    {{ActCategory::Rest, 1}, {"Áı¿¡¼­ ½¬±â", Stat().addStress(-1)
+    // íœ´ì‹
+    {{ActCategory::Rest, 1}, {"ì§‘ì—ì„œ ì‰¬ê¸°", Stat().addStress(-1)
                                                    .addMoney(-1)}},
-    {{ActCategory::Rest, 2}, {"¸ÀÁı Å½¹æ",    Stat().addStress(-2)
+    {{ActCategory::Rest, 2}, {"ë§›ì§‘ íƒë°©",    Stat().addStress(-2)
                                                     .addMoney(-2)}},
-    {{ActCategory::Rest, 3}, {"¹ÙÄ²½º",       Stat().addStress(-3)
+    {{ActCategory::Rest, 3}, {"ë°”ìº‰ìŠ¤",       Stat().addStress(-3)
                                                     .addMoney(-3)}},
 
-    // ¾Æ¸£¹ÙÀÌÆ®
-    {{ActCategory::Work, 1}, {"Àü´ÜÁö µ¹¸®±â",    Stat().addStress(1)
+    // ì•„ë¥´ë°”ì´íŠ¸
+    {{ActCategory::Work, 1}, {"ì „ë‹¨ì§€ ëŒë¦¬ê¸°",    Stat().addStress(1)
                                                         .addMoney(1)}},
-    {{ActCategory::Work, 2}, {"ÆíÀÇÁ¡ ¾Æ¸£¹ÙÀÌÆ®", Stat().addStress(2)
+    {{ActCategory::Work, 2}, {"í¸ì˜ì  ì•„ë¥´ë°”ì´íŠ¸", Stat().addStress(2)
                                                          .addMoney(2)}},
-    {{ActCategory::Work, 3}, {"ÄíÆÎ »óÇÏÂ÷",     Stat().addStress(3)
+    {{ActCategory::Work, 3}, {"ì¿ íŒ¡ ìƒí•˜ì°¨",     Stat().addStress(3)
                                                        .addMoney(3)}},
 };
 
@@ -80,7 +84,7 @@ unique_ptr<Act> ActionFactory::create(ActCategory category, int option) {
     auto it = actionTable.find({ category, option });
     if (it == actionTable.end()) {
         struct UnknownAct : public Act {
-            string getName() const override { return "¾Ë ¼ö ¾ø´Â Çàµ¿"; }
+            string getName() const override { return "ì•Œ ìˆ˜ ì—†ëŠ” í–‰ë™"; }
             Stat getStatEffect() const override { return {}; }
         };
         return make_unique<UnknownAct>();
@@ -101,3 +105,17 @@ unique_ptr<Act> ActionFactory::create(ActCategory category, int option) {
 
     return make_unique<CustomAct>(info.name, info.stat);
 }
+
+//í–‰ë™ ì´ë¦„ ì ìš©
+vector<string> ActionFactory::getActionNames(ActCategory category) {
+    vector<string> result;
+    for ( int i = 1; i <= 3; ++i ) {
+        auto it = actionTable.find({ category, i });
+        if ( it != actionTable.end() ) {
+            result.push_back(it->second.name);
+        }
+    }
+    return result;
+}
+
+
