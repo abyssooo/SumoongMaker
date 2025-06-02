@@ -1,4 +1,4 @@
-#define Ending_h
+#pragma once
 
 #include <string>
 #include "Stat.h"
