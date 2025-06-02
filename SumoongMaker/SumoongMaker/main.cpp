@@ -21,6 +21,7 @@ int main() {
     do {
         Character player("홍길동");
         cout << "게임을 시작합니다.\n";
+        player.showStatsWithAsciiArt();
 
         const int MAX_WEEKS = 12;
         MiniGame mini;
@@ -109,9 +110,9 @@ int main() {
             cout << "\n선택한 행동: " << act->getName() << "\n";
 
 
-
-            player.applyAct(*act);
             player.showStatsWithAsciiArt();
+            player.applyAct(*act);
+            
 
             //3주차마다 미니게임 이벤트 발생
             if ( week % 3 == 0 ) {
