@@ -22,6 +22,8 @@ int main() {
         Character player("홍길동");
         cout << "게임을 시작합니다.\n";
 
+        player.showStatsWithAsciiArt();
+
         const int MAX_WEEKS = 12;
         MiniGame mini;
 
