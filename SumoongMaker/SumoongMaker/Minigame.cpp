@@ -202,7 +202,7 @@ Stat MiniGame::calcReward(bool success) {
     }
     else {
         cout << "패널티: 스트레스 +2, 돈 -3\n";
-        s.addStress(2);
+        s.addStress(2).addMoney(-3);
     }
     sleepMs(2s);
     return s;
