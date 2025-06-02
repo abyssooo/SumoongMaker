@@ -110,8 +110,9 @@ int main() {
             cout << "\n선택한 행동: " << act->getName() << "\n";
 
 
-            player.showStatsWithAsciiArt();
+            
             player.applyAct(*act);
+            player.showStatsWithAsciiArt();
             
 
             //3주차마다 미니게임 이벤트 발생

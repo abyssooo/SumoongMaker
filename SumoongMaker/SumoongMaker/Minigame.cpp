@@ -16,7 +16,7 @@ void MiniGame::clearScreen() const {
 #endif
 }
 
-/* ===== public: 메뉴 → 실행 ===== */
+
 Stat MiniGame::run() {
     bool success = false;
     int sel = 0;
