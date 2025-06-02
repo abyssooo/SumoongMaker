@@ -1,4 +1,4 @@
-﻿#include "MiniGame.h"
+﻿#include "Minigame.h"
 #include <iostream>
 #include <iomanip>
 #include <chrono>
@@ -127,8 +127,18 @@ bool MiniGame::playCardMatch() {
 
         cout << "첫번째 카드를 선택하세요 (11~44): ";
         cin >> card1;
+        if (card1 < 11 || card1 > 44) {
+            cout << "유효한 카드 번호(11~44)를 입력하세요.\n";
+            sleepMs(2s);
+            continue;
+        }
         cout << "두번째 카드를 선택하세요 (11~44): ";
         cin >> card2;
+        if (card1 < 11 || card1 > 44) {
+            cout << "유효한 카드 번호(11~44)를 입력하세요.\n";
+            sleepMs(2s);
+            continue;
+        }
 
     } while (
         1 <= card1 / 10 && card1 / 10 <= 4 &&
@@ -182,6 +192,11 @@ bool MiniGame::playCoinFlip() {
 bool MiniGame::playRockPaperScissors() {
     cout << "가위(1) 바위(2) 보(3) 선택: ";
     int user; cin >> user;
+    if (user < 1 || user > 3) {
+        cout << "잘못된 입력입니다. 가위(1), 바위(2), 보(3) 중 선택하세요.\n";
+        sleepMs(2s);
+        return false
+    }
 
     int sys = uniform_int_distribution<int>(1, 3)(rng);
     const char* hand[ 4 ] = { "","가위","바위","보" };
