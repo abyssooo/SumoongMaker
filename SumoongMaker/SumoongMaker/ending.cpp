@@ -6,7 +6,7 @@ using namespace std;
 Ending::Ending(const Stat& finalStat) : playerStat(finalStat) {}
 
 bool Ending::isBadEnding() const {
-    return playerStat.getStress() >= 100;
+    return playerStat.getStress() >= 10;
 }
 
 bool Ending::isHappyEnding() const {

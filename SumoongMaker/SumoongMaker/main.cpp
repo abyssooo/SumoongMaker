@@ -26,7 +26,7 @@ int main() {
         MiniGame mini;
 
         for ( int week = 1; week <= MAX_WEEKS; ++week ) {
-            cout << "\n==== " << week <<"주차 ====\n";
+            cout << "\n==== " << week <<"달차 ====\n";
             
 
             ActCategory category;
