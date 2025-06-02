@@ -192,10 +192,10 @@ bool MiniGame::playCoinFlip() {
 bool MiniGame::playRockPaperScissors() {
     cout << "가위(1) 바위(2) 보(3) 선택: ";
     int user; cin >> user;
-    if (user < 1 || user > 3) {
+    if ( user < 1 || user > 3 ) {
         cout << "잘못된 입력입니다. 가위(1), 바위(2), 보(3) 중 선택하세요.\n";
         sleepMs(2s);
-        return false
+        return false;
     }
 
     int sys = uniform_int_distribution<int>(1, 3)(rng);
